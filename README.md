@@ -9,7 +9,7 @@ How to
 install dependencies
 
 
-sudo pacman -S linux-pinephone-headers terminus-font
+sudo pacman -S linux-sdm845-headers terminus-font
 
 Build and install buffyboard
 
