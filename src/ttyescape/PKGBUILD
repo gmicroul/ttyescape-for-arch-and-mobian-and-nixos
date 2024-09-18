@@ -1,0 +1,32 @@
+# Maintainer: Adam Thiede <me@adamthiede.com>
+pkgname=ttyescape
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Daemon to allow users to escape to a tty"
+url="https://gitlab.com/postmarketOS/ttyescape"
+arch=(any)
+license=("GPL2")
+depends=(buffyboard terminus-font kbd hkdm)
+
+source=(
+    ${url}/-/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz
+    etc-conf-d-ttyescape.conf
+)
+
+package() {
+  install -Dm755 "${srcdir}/${pkgname}-${pkgver}/togglevt.sh" "${pkgdir}/usr/bin/togglevt.sh"
+
+  install -Dm644 "${srcdir}/${pkgname}-${pkgver}/ttyescape-hkdm.toml" "${pkgdir}/etc/hkdm/config.d/ttyescape.toml"
+
+  install -Dm644 "${srcdir}/etc-conf-d-ttyescape.conf" "${pkgdir}/etc/conf.d/ttyescape.conf"
+}
+
+post_install() {
+  systemctl enable hkdm.service
+}
+
+sha512sums=(
+    "b196cad01d490ac759fc72d58382ffe621b1f33f2ec9794a7937b41bfb9a0f200939d20cd027a2c48d44d095cd8570f332c995ab015d459387d63c7788fd8298"
+    "959894311a875c3761bc73c79d6a486b8f8dc1e52a5a7a21972fbd4e44faafa3e4da02e5ac0a2e660f5ae5c70a9aa60d31344f9dbc4a55e2f9fc9162374161b0"
+)
+
