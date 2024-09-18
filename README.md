@@ -4,6 +4,9 @@ fork from https://framagit.org/lolgzs/ttyescape_manjaro_pinephone
 PKGBUILD files for ttyescape and dependencies on manjaro phosh
 See https://github.com/dreemurrs-embedded/Pine64-Arch/pull/268
 
+or 
+https://github.com/gmicroul/Pine64-Arch
+
 How to
 
 install dependencies
