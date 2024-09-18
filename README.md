@@ -38,6 +38,6 @@ sudo pacman -U ttyescape-1.0.1-1-any.pkg.tar.zst
 Enable and start hkdm
 
 
-sudo sytemctl enable hkdm
-sudo sytemctl start hkdm
+sudo systemctl enable hkdm
+sudo systemctl start hkdm
 Now you should be able to switch to ttyescape holding volume down button then 3 press on power button.
