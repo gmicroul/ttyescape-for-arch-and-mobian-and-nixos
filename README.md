@@ -43,3 +43,7 @@ sudo systemctl enable hkdm
 sudo systemctl start hkdm
 
 Now you should be able to switch to ttyescape holding volume down button then 3 press on power button.
+
+mobian:
+![image](https://github.com/user-attachments/assets/71600f8e-2085-4568-9dd3-315ec6b74191)
+
