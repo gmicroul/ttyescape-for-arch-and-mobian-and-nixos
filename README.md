@@ -44,6 +44,10 @@ sudo systemctl start hkdm
 
 Now you should be able to switch to ttyescape holding volume down button then 3 press on power button.
 
+Arch:
+![image](https://github.com/user-attachments/assets/44db417e-9972-4126-a431-e2711f656a06)
+
+
 mobian:
 ![image](https://github.com/user-attachments/assets/71600f8e-2085-4568-9dd3-315ec6b74191)
 
