@@ -47,3 +47,5 @@ Now you should be able to switch to ttyescape holding volume down button then 3 
 mobian:
 ![image](https://github.com/user-attachments/assets/71600f8e-2085-4568-9dd3-315ec6b74191)
 
+NixOS:
+![image](https://github.com/user-attachments/assets/4b80ffae-01bd-43e8-bcf1-8e38e8a1fad5)
