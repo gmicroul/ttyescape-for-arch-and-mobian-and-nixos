@@ -25,7 +25,7 @@
 # sudo mkdir -p /etc/hkdm/config.d/
 # sudo cp ttyescape-hkdm.toml /etc/hkdm/config.d/ttyescape.toml
 # sudo cp togglevt.sh /usr/bin/
-# git clone https://gitlab.com/postmarketOS/hkdm
+# git clone https://gitlab.com/calebccff/hkdm
 # cd hkdm
 # sudo cp hkdm.example.toml /etc/hkdm/config.d/hkdm.example
 # sudo cp target/debug/hkdm /usr/bin/
