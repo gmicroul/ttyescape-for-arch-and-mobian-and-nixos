@@ -113,6 +113,7 @@ buffyboard:
 
 
 Cài các gói lệ thuộc( package depends) để hỗ trợ chạy ttyescape, hkdm, buffyboard
+git clone https://github.com/vaeth/zram-init
 
 # sudo apt install libevdev2 libinput-bin libinput10 libxkbcommon0 udev
 
@@ -134,9 +135,9 @@ Cấp quyền visudo chạy không cần root passwd để khởi động hkdm d
 
 # visudo
 
-oem ALL=(ALL:ALL) ALL
+mobian ALL=(ALL:ALL) ALL
 
-ALL ALL=(ALL) NOPASSWD: /usr/bin/hkdm, /etc/conf.d/ttyescape.conf,/etc/hkdm/config.d/ttyescape.tmol, /usr/bin/buffyboard, /usr/bin/togglevt.sh, /dev/tty0, /dev/uinput
+ALL ALL=(ALL) NOPASSWD: /usr/bin/hkdm, /etc/conf.d/ttyescape.conf,/etc/hkdm/config.d/ttyescape.toml, /usr/bin/buffyboard, /usr/bin/togglevt.sh, /dev/tty0, /dev/uinput
 
 Kích hoạt hkdm.service và zram-init
 
