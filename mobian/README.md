@@ -17,8 +17,10 @@
 # sudo chvt 2
 # sudo apt install pipenv
 # ./regenerate-layouts.sh
+# git clone https://salsa.debian.org/realroot/ttyescape
 # cd ttyescape/
 # sudo mkdir -p /etc/conf.d
+# cd debian
 # sudo cp ttyescape.conf /etc/conf.d/
 # sudo mkdir -p /etc/hkdm/config.d/
 # sudo cp ttyescape-hkdm.toml /etc/hkdm/config.d/ttyescape.toml
